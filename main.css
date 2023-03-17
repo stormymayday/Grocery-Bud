@@ -327,3 +327,15 @@ Grocery Bud
 .grocery-container {
     margin-top: 2rem;
 }
+
+.grocery-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+    padding: 0.25rem 1rem;
+    border-radius: var(--borderRadius);
+    text-transform: capitalize;
+    color: var(--grey-700);
+}
