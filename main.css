@@ -360,3 +360,14 @@ Grocery Bud
 .delete-btn {
     color: var(--red-dark);
 }
+
+.clear-btn {
+    color: var(--red-dark);
+    width: 100%;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: capitalize;
+    letter-spacing: var(--letterSpacing);
+}
