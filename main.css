@@ -288,6 +288,7 @@ Grocery Bud
     transition: var(--transition);
     padding: 1rem;
     width: 90vw;
+    margin: 0 auto;
 }
 
 .section-center:hover {
