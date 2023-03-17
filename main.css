@@ -303,3 +303,8 @@ Grocery Bud
     letter-spacing: var(--letterSpacing);
     text-transform: capitalize;
 }
+
+.grocery-form h4 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
