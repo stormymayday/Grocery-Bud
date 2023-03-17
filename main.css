@@ -339,3 +339,8 @@ Grocery Bud
     text-transform: capitalize;
     color: var(--grey-700);
 }
+
+.grocery-item:hover {
+    color: var(--grey-500);
+    background-color: var(--grey-100);
+}
