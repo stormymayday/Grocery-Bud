@@ -296,3 +296,10 @@ Grocery Bud
 .section-center:hover {
     box-shadow: var(--shadow-4);
 }
+
+.alert {
+    font-size: 0.7rem;
+    text-align: center;
+    letter-spacing: var(--letterSpacing);
+    text-transform: capitalize;
+}
