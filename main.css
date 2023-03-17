@@ -344,3 +344,11 @@ Grocery Bud
     color: var(--grey-500);
     background-color: var(--grey-100);
 }
+
+.edit-btn,
+.delete-btn {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
