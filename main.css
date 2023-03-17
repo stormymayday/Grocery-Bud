@@ -287,3 +287,7 @@ Grocery Bud
     box-shadow: var(--shadow-2);
     transition: var(--transition);
 }
+
+.section-center:hover {
+    box-shadow: var(--shadow-4);
+}
