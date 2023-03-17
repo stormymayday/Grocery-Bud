@@ -275,3 +275,15 @@ ul {
 }
 
 /* title end */
+
+/*
+=============== 
+Grocery Bud
+===============
+*/
+.section-center {
+    background-color: var(--white);
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-2);
+    transition: var(--transition);
+}
