@@ -312,3 +312,8 @@ Grocery Bud
 .grocery-form .form-row {
     display: flex;
 }
+
+.grocery-form .form-input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
