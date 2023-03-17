@@ -323,3 +323,7 @@ Grocery Bud
     border-bottom-left-radius: 0;
     width: 100px;
 }
+
+.grocery-container {
+    margin-top: 2rem;
+}
