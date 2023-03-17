@@ -352,3 +352,7 @@ Grocery Bud
     cursor: pointer;
     font-size: 0.7rem;
 }
+
+.edit-btn {
+    color: var(--green-dark);
+}
