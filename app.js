@@ -20,6 +20,9 @@ function addItem(event) {
     // Preventing default submit form behaviour
     event.preventDefault();
 
-    // Accesing the groceryInput value
+    // Accessing the groceryInput value
     const inputValue = groceryInput.value;
+
+    // Creating a unique ID
+    const id = new Date().getTime().toString();
 }
