@@ -65,6 +65,8 @@ function addItem(event) {
                     </div>
                     <!-- btn-container end -->
         `
+        // Adding article to the list
+        groceryList.appendChild(element);
 
     } else if (inputValue && editFlag) {
 
