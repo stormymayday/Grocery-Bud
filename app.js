@@ -75,6 +75,7 @@ function addItem(event) {
         groceryContainer.classList.add('show-container');
 
         // Adding to local storage
+        addToLocalStorage(id, value);
 
         // Setting back to default
         setBackToDefault();
