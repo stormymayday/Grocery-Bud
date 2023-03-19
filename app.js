@@ -37,6 +37,10 @@ function addItem(event) {
         const element = document.createElement('article');
         // Adding the 'grocery-item' class
         element.classList.add('grocery-item');
+        // Adding the ID
+        const attribute = document.createAttribute('data-id');
+        attribute.value = id;
+        element.setAttributeNode(attribute);
 
     } else if (inputValue && editFlag) {
 
