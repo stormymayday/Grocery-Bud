@@ -77,6 +77,7 @@ function addItem(event) {
         // Adding to local storage
 
         // Setting back to default
+        setBackToDefault();
 
     } else if (inputValue && editFlag) {
 
