@@ -17,5 +17,6 @@ form.addEventListener('submit', addItem);
 
 // Functions
 function addItem(event) {
-
+    // Preventing default submit form behaviour
+    event.preventDefault();
 }
