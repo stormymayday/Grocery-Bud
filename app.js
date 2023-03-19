@@ -68,6 +68,9 @@ function addItem(event) {
         // Adding article to the list
         groceryList.appendChild(element);
 
+        // Displaying the 'success' alert
+        displayAlert('item added to the list', 'success');
+
     } else if (inputValue && editFlag) {
 
         // If the input field is not empty
