@@ -42,8 +42,10 @@ function addItem(event) {
 
     } else {
 
-        // If the input field is empty
-        console.log(`empty value`);
+        // The input field is empty
+        // Display alert text and add class 'alert-danger'
+        alert.textContent = 'empty value';
+        alert.classList.add('alert-danger');
 
     }
 }
