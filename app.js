@@ -121,11 +121,14 @@ function displayAlert(text, action) {
 // Set Back to Default
 function setBackToDefault() {
 
-    // Clearing the input value
+    // Clearing input value
     groceryInput.value = '';
 
     // Setting editFlag to false
     editFlag = false;
+
+    // Setting editID to empty string
+    editID = '';
 }
 
 // ********** Local Storage **********
