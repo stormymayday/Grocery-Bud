@@ -327,6 +327,7 @@ Grocery Bud
 .grocery-container {
     margin-top: 2rem;
     transition: var(--transition);
+    visibility: hidden;
 }
 
 .grocery-item {
