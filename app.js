@@ -35,7 +35,8 @@ function addItem(event) {
 
         // Creating an article
         const element = document.createElement('article');
-
+        // Adding the 'grocery-item' class
+        element.classList.add('grocery-item');
 
     } else if (inputValue && editFlag) {
 
