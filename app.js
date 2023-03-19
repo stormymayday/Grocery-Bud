@@ -51,8 +51,22 @@ function addItem(event) {
 
 // Display Alert
 function displayAlert(text, action) {
-    // Display alert text
-    // Add class 'alert-danger' or 'alert-success'
+
+    // Displying alert text
     alert.textContent = text;
+
+    // Adding the alert class (danger/success)
     alert.classList.add(`alert-${action}`);
+
+    // Removing the alert after 1 second (1000 ms)
+    setTimeout(function () {
+
+        // Removing the alert text
+        alert.textContent = '';
+
+        // Removing the alert class (danger/success)
+        alert.classList.remove(`alert-${action}`);
+
+    }, 1000);
+
 }
