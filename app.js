@@ -31,13 +31,17 @@ function addItem(event) {
 
         // If the input field is not empty
         // AND there is no editing
-        // THEN item to the list
-        console.log(`add item to the list`);
+        // THEN add item to the list
+
+        // Creating an article
+        const element = document.createElement('article');
+
 
     } else if (inputValue && editFlag) {
 
         // If the input field is not empty
         // AND editing
+        // THEN edit
         console.log(`editing`);
 
 
@@ -52,7 +56,7 @@ function addItem(event) {
 // Display Alert
 function displayAlert(text, action) {
 
-    // Displying alert text
+    // Displaying alert text
     alert.textContent = text;
 
     // Adding the alert class (danger/success)
