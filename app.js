@@ -129,6 +129,9 @@ function setBackToDefault() {
 
     // Setting editID to empty string
     editID = '';
+
+    // Setting submit button value to 'submit'
+    submitBtn.textContent = 'submit';
 }
 
 // ********** Local Storage **********
