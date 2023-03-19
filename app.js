@@ -35,12 +35,36 @@ function addItem(event) {
 
         // Creating an article
         const element = document.createElement('article');
+
         // Adding the 'grocery-item' class
         element.classList.add('grocery-item');
+
         // Adding the ID
         const attribute = document.createAttribute('data-id');
         attribute.value = id;
         element.setAttributeNode(attribute);
+
+        // Setting up the innerHTML
+        element.innerHTML = `                    <span class="title">${inputValue}</span>
+
+                    <!-- btn-container start -->
+                    <div class="btn-container">
+
+                        <!-- edit btn start -->
+                        <button type="button" class="edit-btn">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <!-- edit btn end -->
+
+                        <!-- delete btn start -->
+                        <button type="button" class="delete-btn">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <!-- delete btn end -->
+
+                    </div>
+                    <!-- btn-container end -->
+        `
 
     } else if (inputValue && editFlag) {
 
