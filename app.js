@@ -71,6 +71,9 @@ function addItem(event) {
         // Displaying the 'success' alert
         displayAlert('item added to the list', 'success');
 
+        // Showing the groceryContainer
+        groceryContainer.classList.add('show-container');
+
     } else if (inputValue && editFlag) {
 
         // If the input field is not empty
