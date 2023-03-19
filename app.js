@@ -25,4 +25,25 @@ function addItem(event) {
 
     // Creating a unique ID
     const id = new Date().getTime().toString();
+
+    if (inputValue !== '' && editFlag === false) {
+
+        // If the input field is not empty
+        // AND there is no editing
+        // THEN item to the list
+        console.log(`add item to the list`);
+
+    } else if (inputValue !== '' && editFlag === true) {
+
+        // If the input field is not empty
+        // AND editing
+        console.log(`editing`);
+
+
+    } else {
+
+        // If the input field is empty
+        console.log(`empty value`);
+
+    }
 }
