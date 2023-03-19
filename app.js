@@ -6,4 +6,8 @@ const submitBtn = document.querySelector('.submit-btn');
 const groceryContainer = document.querySelector('.grocery-container');
 const groceryList = document.querySelector('.grocery-list');
 const clearBtn = document.querySelector('.clear-btn');
-console.log(clearBtn);
+
+// Edit Option Variables
+let editElement;
+let editFlag = false;
+let editID = '';
