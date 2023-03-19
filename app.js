@@ -74,6 +74,10 @@ function addItem(event) {
         // Showing the groceryContainer
         groceryContainer.classList.add('show-container');
 
+        // Adding to local storage
+
+        // Setting back to default
+
     } else if (inputValue && editFlag) {
 
         // If the input field is not empty
@@ -110,4 +114,11 @@ function displayAlert(text, action) {
 
     }, 1000);
 
+}
+
+// Set Back to Default
+
+// ********** Local Storage **********
+function addToLocalStorage(id, value) {
+    console.log(`added to local storage`);
 }
