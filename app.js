@@ -19,4 +19,7 @@ form.addEventListener('submit', addItem);
 function addItem(event) {
     // Preventing default submit form behaviour
     event.preventDefault();
+
+    // Accesing the groceryInput value
+    const inputValue = groceryInput.value;
 }
