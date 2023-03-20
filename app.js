@@ -184,6 +184,18 @@ function clearItems() {
 }
 // Clear Items - end
 
+// Delete Item - start
+function deleteItem() {
+    console.log(`delete item`);
+}
+// Delete Item - end
+
+// Edit Item - start
+function editItem() {
+    console.log(`edit item`);
+}
+// Edit Item - end
+
 // ********** Local Storage **********
 function addToLocalStorage(id, inputValue) {
     console.log(`added to local storage`);
