@@ -13,7 +13,10 @@ let editFlag = false;
 let editID = '';
 
 // ********** Event Listeners **********
+// Form Submission
 form.addEventListener('submit', addItem);
+// Clear Items
+clearBtn.addEventListener('click', clearItems);
 
 // ********** Functions **********
 // Add Item
@@ -133,6 +136,9 @@ function setBackToDefault() {
     // Setting submit button value to 'submit'
     submitBtn.textContent = 'submit';
 }
+
+// Clear List
+
 
 // ********** Local Storage **********
 function addToLocalStorage(id, inputValue) {
