@@ -153,6 +153,9 @@ function clearItems() {
 
     }
 
+    // Removing 'show-container' class from the groceryContainer
+    groceryContainer.classList.remove('show-container');
+
 }
 
 // ********** Local Storage **********
