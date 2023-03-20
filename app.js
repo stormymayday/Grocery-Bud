@@ -197,6 +197,8 @@ function editItem() {
 // Edit Item - end
 
 // ********** Local Storage **********
+// Add to local storate - start
 function addToLocalStorage(id, inputValue) {
     console.log(`added to local storage`);
 }
+// Add to local storate - end
