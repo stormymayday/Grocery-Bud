@@ -137,8 +137,13 @@ function setBackToDefault() {
     submitBtn.textContent = 'submit';
 }
 
-// Clear List
+// Clear Items
+function clearItems() {
 
+    // Selecting all the 'grocery-item's
+    const items = document.querySelectorAll('.grocery-item');
+
+}
 
 // ********** Local Storage **********
 function addToLocalStorage(id, inputValue) {
