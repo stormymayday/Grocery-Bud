@@ -162,6 +162,12 @@ function clearItems() {
     // Displaying the alert
     displayAlert('list has been cleared', 'success');
 
+    // Setting back to default
+    setBackToDefault();
+
+    // Removing from local storage
+    // localStorage.removeItem('list');
+
 }
 // Clear Items - end
 
