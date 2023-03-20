@@ -78,6 +78,9 @@ function addItem(event) {
         // delete item button event listener
         deleteBtn.addEventListener('click', deleteItem);
 
+        // edit item button event listener
+        editBtn.addEventListener('click', editItem);
+
         // Adding article to the list
         groceryList.appendChild(element);
 
