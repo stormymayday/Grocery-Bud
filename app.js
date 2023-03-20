@@ -146,6 +146,10 @@ function clearItems() {
     // Checking if the length of the nodeList is > 0
     if (items.length > 0) {
 
+        // Iterating over the nodeList and removing items from the groceryList
+        items.forEach(function (item) {
+            groceryList.removeChild(item);
+        });
 
     }
 
