@@ -19,7 +19,7 @@ form.addEventListener('submit', addItem);
 clearBtn.addEventListener('click', clearItems);
 
 // ********** Functions **********
-// Add Item
+// Add Item - start
 function addItem(event) {
     // Preventing default submit form behaviour
     event.preventDefault();
@@ -98,8 +98,9 @@ function addItem(event) {
 
     }
 }
+// Add Item - end
 
-// Display Alert
+// Display Alert - start
 function displayAlert(text, action) {
 
     // Displaying alert text
@@ -120,8 +121,9 @@ function displayAlert(text, action) {
     }, 1500);
 
 }
+// Display Alert - end
 
-// Set Back to Default
+// Set Back to Default - start
 function setBackToDefault() {
 
     // Clearing input value
@@ -136,8 +138,9 @@ function setBackToDefault() {
     // Setting submit button value to 'submit'
     submitBtn.textContent = 'submit';
 }
+// Set Back to Default - end
 
-// Clear Items
+// Clear Items - start
 function clearItems() {
 
     // Selecting all the 'grocery-item's
@@ -160,6 +163,7 @@ function clearItems() {
     displayAlert('list has been cleared', 'success');
 
 }
+// Clear Items - end
 
 // ********** Local Storage **********
 function addToLocalStorage(id, inputValue) {
