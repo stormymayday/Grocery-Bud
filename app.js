@@ -67,7 +67,11 @@ function addItem(event) {
 
                     </div>
                     <!-- btn-container end -->
-        `
+        `;
+
+        // Targetting the delete item button
+        const deleteBtn = element.querySelector('.delete-btn');
+
         // Adding article to the list
         groceryList.appendChild(element);
 
