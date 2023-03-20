@@ -108,7 +108,7 @@ function displayAlert(text, action) {
     // Adding the alert class (danger/success)
     alert.classList.add(`alert-${action}`);
 
-    // Removing the alert after 1 second (1000 ms)
+    // Removing the alert after 1.5 second (1500 ms)
     setTimeout(function () {
 
         // Removing the alert text
@@ -117,7 +117,7 @@ function displayAlert(text, action) {
         // Removing the alert class (danger/success)
         alert.classList.remove(`alert-${action}`);
 
-    }, 1000);
+    }, 1500);
 
 }
 
