@@ -335,4 +335,12 @@ function getLocalStorage() {
 }
 // Get local storage - end
 
-// ****** setup items **********
+// ****** Set Up Items **********
+// setUpItems - start
+function setUpItems() {
+
+    // Getting items from the Local Storage
+    let items = getLocalStorage();
+
+}
+// setUpItems - end
