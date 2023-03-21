@@ -38,7 +38,8 @@ function addItem(event) {
         // AND there is no editing
         // THEN add item to the list
 
-
+        // Calling the creatListItem
+        createListItem(id, inputValue);
 
         // Displaying the 'success' alert
         displayAlert('item added to the list', 'success');
@@ -300,6 +301,15 @@ function setUpItems() {
     if (items.length > 0) {
 
         // Iterating over the items
+        items.forEach(function (item) {
+
+            // Calling the createListItem
+            createListItem(item.id, item.value);
+
+        });
+
+        // Adding the 'show-container' class
+        groceryContainer.classList.add('show-container');
 
     }
 
