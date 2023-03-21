@@ -342,5 +342,12 @@ function setUpItems() {
     // Getting items from the Local Storage
     let items = getLocalStorage();
 
+    // Checking if the 'items' array is not empty
+    if (items.length > 0) {
+
+        // Iterating over the items
+
+    }
+
 }
 // setUpItems - end
