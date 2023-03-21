@@ -238,14 +238,14 @@ function editItem(event) {
 // Edit Item - end
 
 // ********** Local Storage **********
-// Add to local storate - start
+// Add to local storage - start
 function addToLocalStorage(id, inputValue) {
     console.log(`added to local storage`);
 }
-// Add to local storate - end
+// Add to local storage - end
 
-// Remove from local storate - start
+// Remove from local storage - start
 function removeFromLocalStorage(id) {
     console.log(`removed from local storage`);
 }
-// Remove from local storate - end
+// Remove from local storage - end
