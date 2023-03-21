@@ -274,7 +274,9 @@ function addToLocalStorage(id, value) {
 
     // Adding 'grocery' into the 'items' array
     items.push(grocery);
-    console.log(items);
+
+    // Putting 'items' into the Local Storage (possibly overriding an existing value)
+    localStorage.setItem('list', JSON.stringify(items));
 
 }
 // Add to local storage - end
