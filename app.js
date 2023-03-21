@@ -248,6 +248,19 @@ function editItem(event) {
 // Edit Item - end
 
 // ********** Local Storage **********
+
+// localStorage API
+// Key Value pairs
+// Methods:
+// 1. setItem
+// 2. getItem
+// 3. removeItem
+// Need to save values as strings
+// Examples:
+// localStorage.setItem('myKey1', JSON.stringify(['item1', 'item2']));
+// const myArray = JSON.parse(localStorage.getItem('myKey1'));
+// localStorage.removeItem('myKey1');
+
 // Add to local storage - start
 function addToLocalStorage(id, inputValue) {
     console.log(`added to local storage`);
