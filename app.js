@@ -273,7 +273,7 @@ function addToLocalStorage(id, value) {
     // Adding 'grocery' into the 'items' array
     items.push(grocery);
 
-    // Putting 'items' into the Local Storage (possibly overriding an existing value)
+    // Putting 'items' into the Local Storage (overriding an existing value)
     localStorage.setItem('list', JSON.stringify(items));
 
 }
@@ -285,6 +285,17 @@ function removeFromLocalStorage(id) {
     // Getting items from the Local Storage
     let items = getLocalStorage();
 
+    // Filtering out the item with matching ID
+    items = items.filter(function (item) {
+
+        if (item.id !== id) {
+            return item;
+        }
+
+    });
+
+    // Putting updated 'items' array (w/o the filtered item) into the Local Storage
+    localStorage.setItem('list', JSON.stringify(items));
 }
 // Remove from local storage - end
 
