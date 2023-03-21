@@ -321,7 +321,7 @@ function createListItem(id, value) {
     element.setAttributeNode(attribute);
 
     // Setting up the innerHTML
-    element.innerHTML = `                    <span class="title">${inputValue}</span>
+    element.innerHTML = `                    <span class="title">${value}</span>
 
                     <!-- btn-container start -->
                     <div class="btn-container">
