@@ -259,3 +259,9 @@ function removeFromLocalStorage(id) {
     console.log(`removed from local storage`);
 }
 // Remove from local storage - end
+
+// Edit in local storage - start
+function editLocalStorage(id, value) {
+    console.log(`Editing local storage: id=${id}, value=${value}`);
+}
+// Edit inlocal storage - end
