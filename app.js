@@ -189,7 +189,7 @@ function clearItems() {
     setBackToDefault();
 
     // Removing from local storage
-    // localStorage.removeItem('list');
+    localStorage.removeItem('list');
 
 }
 // Clear Items - end
