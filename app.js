@@ -351,3 +351,9 @@ function setUpItems() {
 
 }
 // setUpItems - end
+
+// createListItem - start
+function createListItem(id, value) {
+
+}
+// createListItem - end
