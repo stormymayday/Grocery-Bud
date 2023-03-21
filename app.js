@@ -205,6 +205,9 @@ function deleteItem(event) {
     // Setting back to default
     setBackToDefault();
 
+    // Removing from Local Storage
+    removeFromLocalStorage(id);
+
 }
 // Delete Item - end
 
