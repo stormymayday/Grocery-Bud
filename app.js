@@ -281,7 +281,10 @@ function addToLocalStorage(id, value) {
 
 // Remove from local storage - start
 function removeFromLocalStorage(id) {
-    console.log(`removed from local storage id=${id}`);
+
+    // Getting items from the Local Storage
+    let items = getLocalStorage();
+
 }
 // Remove from local storage - end
 
