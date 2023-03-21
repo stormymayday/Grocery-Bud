@@ -264,4 +264,4 @@ function removeFromLocalStorage(id) {
 function editLocalStorage(id, value) {
     console.log(`Editing local storage: id=${id}, value=${value}`);
 }
-// Edit inlocal storage - end
+// Edit in local storage - end
