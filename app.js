@@ -108,7 +108,10 @@ function addItem(event) {
         // 2. Displaying the alert:
         displayAlert('value changed', 'success');
 
-        // 3. Setting back to default:
+        // 3. Editing in the Local Storage
+        editLocalStorage();
+
+        // 4. Setting back to default:
         setBackToDefault();
 
     } else {
