@@ -192,6 +192,13 @@ function deleteItem(event) {
 
     // Removing 'grocery-item' from the groceryList
     groceryList.removeChild(groceryItem);
+
+    // Check if groceryList is empty
+    if (groceryList.children.length === 0) {
+        // Remove the 'show-container' class
+        groceryContainer.classList.remove('show-container');
+    }
+
 }
 // Delete Item - end
 
