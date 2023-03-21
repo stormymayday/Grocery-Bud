@@ -222,7 +222,9 @@ function editItem(event) {
 
     // Getting the associated span with class of 'title' that contains the item name
     editElement = event.currentTarget.parentElement.previousElementSibling;
-    console.log(editElement);
+
+    // Placing the groceryItem name into the input field (groceryInput)
+    groceryInput.value = editElement.innerHTML;
 
 }
 // Edit Item - end
