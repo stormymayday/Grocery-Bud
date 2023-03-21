@@ -219,7 +219,11 @@ function editItem(event) {
 
     // Selecting the 'grocery-item'
     const groceryItem = event.currentTarget.parentElement.parentElement;
-    console.log(groceryItem);
+
+    // Getting the associated span with class of 'title' that contains the item name
+    editElement = event.currentTarget.parentElement.previousElementSibling;
+    console.log(editElement);
+
 }
 // Edit Item - end
 
