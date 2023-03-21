@@ -293,8 +293,8 @@ function editLocalStorage(id, value) {
 
 // Get local storage - start
 function getLocalStorage() {
-    // IF exists THEN get it
-    // ELSE set items to an empty array
+    // IF 'lost' exists THEN get it
+    // ELSE return an empty array
     return localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : [];
 }
 // Get local storage - end
