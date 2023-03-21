@@ -100,7 +100,9 @@ function addItem(event) {
 
         // If the input field is not empty
         // AND editing
-        // THEN edit
+        // THEN edit:
+        // 1. Grabbing the input value and assigning it to the editElement
+        editElement.innerHTML = inputValue;
         console.log(`editing`);
 
 
