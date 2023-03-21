@@ -188,10 +188,10 @@ function clearItems() {
 function deleteItem(event) {
 
     // Selecting the 'grocery-item'
-    const element = event.currentTarget.parentElement.parentElement;
+    const groceryItem = event.currentTarget.parentElement.parentElement;
 
     // Removing 'grocery-item' from the groceryList
-    groceryList.removeChild(element);
+    groceryList.removeChild(groceryItem);
 }
 // Delete Item - end
 
