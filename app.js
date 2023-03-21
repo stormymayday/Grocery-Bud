@@ -301,7 +301,10 @@ function removeFromLocalStorage(id) {
 
 // Edit in local storage - start
 function editLocalStorage(id, value) {
-    console.log(`Editing local storage: id=${id}, value=${value}`);
+
+    // Getting items from the Local Storage
+    let items = getLocalStorage();
+
 }
 // Edit in local storage - end
 
