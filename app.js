@@ -292,3 +292,9 @@ function editLocalStorage(id, value) {
     console.log(`Editing local storage: id=${id}, value=${value}`);
 }
 // Edit in local storage - end
+
+// Get local storage - start
+function getLocalStorage() {
+    return localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : [];
+}
+// Get local storage - end
