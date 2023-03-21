@@ -263,7 +263,16 @@ function editItem(event) {
 
 // Add to local storage - start
 function addToLocalStorage(id, value) {
-    console.log(`added to local storage: id=${id}, value=${value}`);
+
+    // Setting up the grocery object
+    const grocery = { id: id, value: value };
+
+    // Getting items from the Local Storage
+    // IF exists THEN get it
+    // ELSE set items to an empty array
+    let items = localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : [];
+    console.log(items);
+
 }
 // Add to local storage - end
 
