@@ -319,6 +319,9 @@ function editLocalStorage(id, value) {
 
     });
 
+    // Putting updated 'items' array into the Local Storage
+    localStorage.setItem('list', JSON.stringify(items));
+
 }
 // Edit in local storage - end
 
