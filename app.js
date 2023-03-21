@@ -231,8 +231,9 @@ function editItem(event) {
 
     // Setting up the editID
     editID = groceryItem.dataset.id;
-    console.log(`edit ID: ${editID}`);
 
+    // Changing the 'Submit' button (value) to 'Edit'
+    submitBtn.textContent = 'edit';
 }
 // Edit Item - end
 
