@@ -189,7 +189,9 @@ function deleteItem(event) {
 
     // Selecting the 'grocery-item'
     const element = event.currentTarget.parentElement.parentElement;
-    console.log(element);
+
+    // Removing 'grocery-item' from the groceryList
+    groceryList.removeChild(element);
 }
 // Delete Item - end
 
