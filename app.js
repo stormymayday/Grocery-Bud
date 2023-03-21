@@ -223,3 +223,9 @@ function addToLocalStorage(id, inputValue) {
     console.log(`added to local storage`);
 }
 // Add to local storate - end
+
+// Remove from local storate - start
+function removeFromLocalStorage(id) {
+    console.log(`removed from local storage`);
+}
+// Remove from local storate - end
