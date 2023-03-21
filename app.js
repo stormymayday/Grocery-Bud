@@ -216,8 +216,11 @@ function deleteItem(event) {
 // Delete Item - end
 
 // Edit Item - start
-function editItem() {
-    console.log(`edit item`);
+function editItem(event) {
+
+    // Selecting the 'grocery-item'
+    const groceryItem = event.currentTarget.parentElement.parentElement;
+    console.log(groceryItem);
 }
 // Edit Item - end
 
