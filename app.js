@@ -262,14 +262,14 @@ function editItem(event) {
 // localStorage.removeItem('myKey1');
 
 // Add to local storage - start
-function addToLocalStorage(id, inputValue) {
-    console.log(`added to local storage`);
+function addToLocalStorage(id, value) {
+    console.log(`added to local storage: id=${id}, value=${value}`);
 }
 // Add to local storage - end
 
 // Remove from local storage - start
 function removeFromLocalStorage(id) {
-    console.log(`removed from local storage`);
+    console.log(`removed from local storage id=${id}`);
 }
 // Remove from local storage - end
 
