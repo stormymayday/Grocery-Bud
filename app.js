@@ -259,7 +259,7 @@ function editItem(event) {
 // Examples:
 // localStorage.setItem('myKey1', JSON.stringify(['item1', 'item2']));
 // const myArray = JSON.parse(localStorage.getItem('myKey1'));
-// localStorage.removeItem('myKey1');
+// localStorage.removeItem('list');
 
 // Add to local storage - start
 function addToLocalStorage(id, value) {
