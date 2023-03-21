@@ -199,6 +199,9 @@ function deleteItem(event) {
         groceryContainer.classList.remove('show-container');
     }
 
+    // Displaying the alert
+    displayAlert('item removed', 'success');
+
 }
 // Delete Item - end
 
