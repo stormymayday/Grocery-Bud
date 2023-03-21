@@ -101,12 +101,15 @@ function addItem(event) {
         // If the input field is not empty
         // AND editing
         // THEN edit:
-        // 1. Grabbing the input value and assigning it to the editElement
-        editElement.innerHTML = inputValue;
-        // 2. Displaying the alert
-        displayAlert('value changed', 'success');
-        console.log(`editing`);
 
+        // 1. Grabbing the input value and assigning it to the editElement:
+        editElement.innerHTML = inputValue;
+
+        // 2. Displaying the alert:
+        displayAlert('value changed', 'success');
+
+        // 3. Setting back to default:
+        setBackToDefault();
 
     } else {
 
