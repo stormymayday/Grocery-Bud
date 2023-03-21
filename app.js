@@ -185,8 +185,11 @@ function clearItems() {
 // Clear Items - end
 
 // Delete Item - start
-function deleteItem() {
-    console.log(`delete item`);
+function deleteItem(event) {
+
+    // Selecting the 'grocery-item'
+    const element = event.currentTarget.parentElement.parentElement;
+    console.log(element);
 }
 // Delete Item - end
 
