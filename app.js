@@ -294,7 +294,7 @@ function removeFromLocalStorage(id) {
 
     });
 
-    // Putting updated 'items' array (w/o the filtered item) into the Local Storage
+    // Putting updated 'items' array (w/o the filtered out item) into the Local Storage
     localStorage.setItem('list', JSON.stringify(items));
 }
 // Remove from local storage - end
