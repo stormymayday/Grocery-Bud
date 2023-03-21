@@ -271,6 +271,9 @@ function addToLocalStorage(id, value) {
     // IF exists THEN get it
     // ELSE set items to an empty array
     let items = localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : [];
+
+    // Adding 'grocery' into the 'items' array
+    items.push(grocery);
     console.log(items);
 
 }
