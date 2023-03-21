@@ -268,8 +268,6 @@ function addToLocalStorage(id, value) {
     const grocery = { id: id, value: value };
 
     // Getting items from the Local Storage
-    // IF exists THEN get it
-    // ELSE set items to an empty array
     let items = getLocalStorage();
 
     // Adding 'grocery' into the 'items' array
@@ -295,6 +293,8 @@ function editLocalStorage(id, value) {
 
 // Get local storage - start
 function getLocalStorage() {
+    // IF exists THEN get it
+    // ELSE set items to an empty array
     return localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : [];
 }
 // Get local storage - end
