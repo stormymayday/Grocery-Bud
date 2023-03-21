@@ -17,6 +17,8 @@ let editID = '';
 form.addEventListener('submit', addItem);
 // Clear Items
 clearBtn.addEventListener('click', clearItems);
+// Load Items from Local Storage
+window.addEventListener('DOMContentLoaded', setUpItems);
 
 // ********** Functions **********
 // Add Item - start
@@ -332,3 +334,5 @@ function getLocalStorage() {
     return localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : [];
 }
 // Get local storage - end
+
+// ****** setup items **********
