@@ -109,7 +109,7 @@ function addItem(event) {
         displayAlert('value changed', 'success');
 
         // 3. Editing in the Local Storage
-        editLocalStorage();
+        editLocalStorage(editID, inputValue);
 
         // 4. Setting back to default:
         setBackToDefault();
