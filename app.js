@@ -226,6 +226,9 @@ function editItem(event) {
     // Placing the groceryItem name into the input field (groceryInput)
     groceryInput.value = editElement.innerHTML;
 
+    // Setting the editFlag to true
+    editFlag = true;
+
 }
 // Edit Item - end
 
