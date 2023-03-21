@@ -190,6 +190,10 @@ function deleteItem(event) {
     // Selecting the 'grocery-item'
     const groceryItem = event.currentTarget.parentElement.parentElement;
 
+    // Accesssing the id
+    const id = groceryItem.dataset.id;
+    console.log(id);
+
     // Removing 'grocery-item' from the groceryList
     groceryList.removeChild(groceryItem);
 
