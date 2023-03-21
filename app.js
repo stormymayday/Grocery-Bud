@@ -229,6 +229,10 @@ function editItem(event) {
     // Setting the editFlag to true
     editFlag = true;
 
+    // Setting up the editID
+    editID = groceryItem.dataset.id;
+    console.log(`edit ID: ${editID}`);
+
 }
 // Edit Item - end
 
