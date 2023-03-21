@@ -202,6 +202,9 @@ function deleteItem(event) {
     // Displaying the alert
     displayAlert('item removed', 'success');
 
+    // Setting back to default
+    setBackToDefault();
+
 }
 // Delete Item - end
 
