@@ -1,17 +1,18 @@
 import getElement from "./utils/getElement.js";
+import addItem from "./addItem.js";
 
 // ********** Selecting Items **********
 const alert = getElement('.alert');
 const form = getElement('.grocery-form');
-const groceryInput = document.getElementById('grocery');
+export const groceryInput = document.getElementById('grocery');
 const submitBtn = getElement('.submit-btn');
-const groceryContainer = getElement('.grocery-container');
+export const groceryContainer = getElement('.grocery-container');
 const groceryList = getElement('.grocery-list');
 const clearBtn = getElement('.clear-btn');
 
 // ********** Edit Option Variables **********
 let editElement;
-let editFlag = false;
+export let editFlag = false;
 let editID = '';
 
 // ********** Event Listeners **********
@@ -24,66 +25,11 @@ window.addEventListener('DOMContentLoaded', setUpItems);
 
 // ********** Functions **********
 // Add Item - start
-function addItem(event) {
-    // Preventing default submit form behaviour
-    event.preventDefault();
 
-    // Accessing the groceryInput value
-    const inputValue = groceryInput.value;
-
-    // Creating a unique ID
-    const id = new Date().getTime().toString();
-
-    if (inputValue && !editFlag) {
-
-        // If the input field is not empty
-        // AND there is no editing
-        // THEN add item to the list
-
-        // Calling the creatListItem
-        createListItem(id, inputValue);
-
-        // Displaying the 'success' alert
-        displayAlert('item added to the list', 'success');
-
-        // Showing the groceryContainer
-        groceryContainer.classList.add('show-container');
-
-        // Adding to local storage
-        addToLocalStorage(id, inputValue);
-
-        // Setting back to default
-        setBackToDefault();
-
-    } else if (inputValue && editFlag) {
-
-        // If the input field is not empty
-        // AND editing
-        // THEN edit:
-
-        // 1. Grabbing the input value and assigning it to the editElement:
-        editElement.innerHTML = inputValue;
-
-        // 2. Displaying the alert:
-        displayAlert('value changed', 'success');
-
-        // 3. Editing in the Local Storage
-        editLocalStorage(editID, inputValue);
-
-        // 4. Setting back to default:
-        setBackToDefault();
-
-    } else {
-
-        // The input field is empty
-        displayAlert(`please enter value`, `danger`);
-
-    }
-}
 // Add Item - end
 
 // Display Alert - start
-function displayAlert(text, action) {
+export function displayAlert(text, action) {
 
     // Displaying alert text
     alert.textContent = text;
@@ -106,7 +52,7 @@ function displayAlert(text, action) {
 // Display Alert - end
 
 // Set Back to Default - start
-function setBackToDefault() {
+export function setBackToDefault() {
 
     // Clearing input value
     groceryInput.value = '';
@@ -221,7 +167,7 @@ function editItem(event) {
 // localStorage.removeItem('list');
 
 // Add to local storage - start
-function addToLocalStorage(id, value) {
+export function addToLocalStorage(id, value) {
 
     // Setting up the grocery object
     const grocery = { id: id, value: value };
@@ -319,7 +265,7 @@ function setUpItems() {
 // setUpItems - end
 
 // createListItem - start
-function createListItem(id, value) {
+export function createListItem(id, value) {
 
     // Creating an article
     const element = document.createElement('article');
