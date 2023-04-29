@@ -1,21 +1,18 @@
 import getElement from "./utils/getElement.js";
-import addItem from "./utils/addItem.js";
-import deleteItem from "./utils/deleteItem.js";
-import clearItems from "./utils/clearItems.js";
 
 // ********** Selecting Items **********
 const alert = getElement('.alert');
 const form = getElement('.grocery-form');
-export const groceryInput = document.getElementById('grocery');
+const groceryInput = document.getElementById('grocery');
 const submitBtn = getElement('.submit-btn');
-export const groceryContainer = getElement('.grocery-container');
-export const groceryList = getElement('.grocery-list');
+const groceryContainer = getElement('.grocery-container');
+const groceryList = getElement('.grocery-list');
 const clearBtn = getElement('.clear-btn');
 
 // ********** Edit Option Variables **********
-export let editElement;
-export let editFlag = false;
-export let editID = '';
+let editElement;
+let editFlag = false;
+let editID = '';
 
 // ********** Event Listeners **********
 // Form Submission
@@ -26,9 +23,125 @@ clearBtn.addEventListener('click', clearItems);
 window.addEventListener('DOMContentLoaded', setUpItems);
 
 // ********** Functions **********
-// Add Item - start
+// addItem - start
+function addItem(event) {
+    // Preventing default submit form behaviour
+    event.preventDefault();
 
-// Add Item - end
+    // Accessing the groceryInput value
+    const inputValue = groceryInput.value;
+
+    // Creating a unique ID
+    const id = new Date().getTime().toString();
+
+    if (inputValue && !editFlag) {
+
+        // If the input field is not empty
+        // AND there is no editing
+        // THEN add item to the list
+
+        // Calling the creatListItem
+        createListItem(id, inputValue);
+
+        // Displaying the 'success' alert
+        displayAlert('item added to the list', 'success');
+
+        // Showing the groceryContainer
+        groceryContainer.classList.add('show-container');
+
+        // Adding to local storage
+        addToLocalStorage(id, inputValue);
+
+        // Setting back to default
+        setBackToDefault();
+
+    } else if (inputValue && editFlag) {
+
+        // If the input field is not empty
+        // AND editing
+        // THEN edit:
+
+        // 1. Grabbing the input value and assigning it to the editElement:
+        editElement.innerHTML = inputValue;
+
+        // 2. Displaying the alert:
+        displayAlert('value changed', 'success');
+
+        // 3. Editing in the Local Storage
+        editLocalStorage(editID, inputValue);
+
+        // 4. Setting back to default:
+        setBackToDefault();
+
+    } else {
+
+        // The input field is empty
+        displayAlert(`please enter value`, `danger`);
+
+    }
+}
+// addItem - start
+
+// deleteItem - start
+function deleteItem(event) {
+
+    // Selecting the 'grocery-item'
+    const groceryItem = event.currentTarget.parentElement.parentElement;
+
+    // Accesssing the id
+    const id = groceryItem.dataset.id;
+
+    // Removing 'grocery-item' from the groceryList
+    groceryList.removeChild(groceryItem);
+
+    // Check if groceryList is empty
+    if (groceryList.children.length === 0) {
+        // Remove the 'show-container' class
+        groceryContainer.classList.remove('show-container');
+    }
+
+    // Displaying the alert
+    displayAlert('item removed', 'success');
+
+    // Setting back to default
+    setBackToDefault();
+
+    // Removing from Local Storage
+    removeFromLocalStorage(id);
+
+}
+// deleteItem - end
+
+// clearItems - start
+function clearItems() {
+
+    // Selecting all the 'grocery-item's
+    const items = document.querySelectorAll('.grocery-item');
+
+    // Checking if the length of the nodeList is > 0
+    if (items.length > 0) {
+
+        // Iterating over the nodeList and removing items from the groceryList
+        items.forEach(function (item) {
+            groceryList.removeChild(item);
+        });
+
+    }
+
+    // Removing 'show-container' class from the groceryContainer
+    groceryContainer.classList.remove('show-container');
+
+    // Displaying the alert
+    displayAlert('list has been cleared', 'success');
+
+    // Setting back to default
+    setBackToDefault();
+
+    // Removing from local storage
+    localStorage.removeItem('list');
+
+}
+// clearItems - end
 
 // Display Alert - start
 export function displayAlert(text, action) {
@@ -69,14 +182,6 @@ export function setBackToDefault() {
     submitBtn.textContent = 'submit';
 }
 // Set Back to Default - end
-
-// Clear Items - start
-
-// Clear Items - end
-
-// Delete Item - start
-
-// Delete Item - end
 
 // Edit Item - start
 function editItem(event) {
