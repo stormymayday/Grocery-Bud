@@ -1,5 +1,6 @@
 import getElement from "./utils/getElement.js";
 import addItem from "./addItem.js";
+import clearItems from "./utils/clearItems.js";
 
 // ********** Selecting Items **********
 const alert = getElement('.alert');
@@ -7,7 +8,7 @@ const form = getElement('.grocery-form');
 export const groceryInput = document.getElementById('grocery');
 const submitBtn = getElement('.submit-btn');
 export const groceryContainer = getElement('.grocery-container');
-const groceryList = getElement('.grocery-list');
+export const groceryList = getElement('.grocery-list');
 const clearBtn = getElement('.clear-btn');
 
 // ********** Edit Option Variables **********
@@ -69,34 +70,7 @@ export function setBackToDefault() {
 // Set Back to Default - end
 
 // Clear Items - start
-function clearItems() {
 
-    // Selecting all the 'grocery-item's
-    const items = document.querySelectorAll('.grocery-item');
-
-    // Checking if the length of the nodeList is > 0
-    if (items.length > 0) {
-
-        // Iterating over the nodeList and removing items from the groceryList
-        items.forEach(function (item) {
-            groceryList.removeChild(item);
-        });
-
-    }
-
-    // Removing 'show-container' class from the groceryContainer
-    groceryContainer.classList.remove('show-container');
-
-    // Displaying the alert
-    displayAlert('list has been cleared', 'success');
-
-    // Setting back to default
-    setBackToDefault();
-
-    // Removing from local storage
-    localStorage.removeItem('list');
-
-}
 // Clear Items - end
 
 // Delete Item - start
