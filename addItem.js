@@ -1,9 +1,8 @@
-import { groceryInput } from "./app.js";
-import { groceryContainer } from "./app.js";
-import { editFlag } from "./app.js";
+import { groceryInput, groceryContainer, editFlag, editElement, editID } from "./app.js";
 import { createListItem } from "./app.js";
 import { displayAlert } from "./app.js";
 import { addToLocalStorage } from "./app.js";
+import { editLocalStorage } from "./app.js";
 import { setBackToDefault } from "./app.js";
 
 function addItem(event) {

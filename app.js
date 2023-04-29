@@ -11,9 +11,9 @@ const groceryList = getElement('.grocery-list');
 const clearBtn = getElement('.clear-btn');
 
 // ********** Edit Option Variables **********
-let editElement;
+export let editElement;
 export let editFlag = false;
-let editID = '';
+export let editID = '';
 
 // ********** Event Listeners **********
 // Form Submission
@@ -205,7 +205,7 @@ function removeFromLocalStorage(id) {
 // Remove from local storage - end
 
 // Edit in local storage - start
-function editLocalStorage(id, value) {
+export function editLocalStorage(id, value) {
 
     // Getting items from the Local Storage
     let items = getLocalStorage();
