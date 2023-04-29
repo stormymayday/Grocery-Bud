@@ -7,7 +7,7 @@ const groceryInput = document.getElementById('grocery');
 const submitBtn = getElement('.submit-btn');
 const groceryContainer = getElement('.grocery-container');
 const groceryList = getElement('.grocery-list');
-const clearBtn = document.querySelector('.clear-btn');
+const clearBtn = getElement('.clear-btn');
 
 // ********** Edit Option Variables **********
 let editElement;
