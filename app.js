@@ -1,5 +1,5 @@
 import getElement from "./utils/getElement.js";
-import addItem from "./addItem.js";
+import addItem from "./utils/addItem.js";
 import clearItems from "./utils/clearItems.js";
 
 // ********** Selecting Items **********
