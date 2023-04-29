@@ -1,5 +1,6 @@
 import getElement from "./utils/getElement.js";
 import addItem from "./utils/addItem.js";
+import deleteItem from "./utils/deleteItem.js";
 import clearItems from "./utils/clearItems.js";
 
 // ********** Selecting Items **********
@@ -74,33 +75,7 @@ export function setBackToDefault() {
 // Clear Items - end
 
 // Delete Item - start
-function deleteItem(event) {
 
-    // Selecting the 'grocery-item'
-    const groceryItem = event.currentTarget.parentElement.parentElement;
-
-    // Accesssing the id
-    const id = groceryItem.dataset.id;
-
-    // Removing 'grocery-item' from the groceryList
-    groceryList.removeChild(groceryItem);
-
-    // Check if groceryList is empty
-    if (groceryList.children.length === 0) {
-        // Remove the 'show-container' class
-        groceryContainer.classList.remove('show-container');
-    }
-
-    // Displaying the alert
-    displayAlert('item removed', 'success');
-
-    // Setting back to default
-    setBackToDefault();
-
-    // Removing from Local Storage
-    removeFromLocalStorage(id);
-
-}
 // Delete Item - end
 
 // Edit Item - start
@@ -159,7 +134,7 @@ export function addToLocalStorage(id, value) {
 // Add to local storage - end
 
 // Remove from local storage - start
-function removeFromLocalStorage(id) {
+export function removeFromLocalStorage(id) {
 
     // Getting items from the Local Storage
     let items = getLocalStorage();
