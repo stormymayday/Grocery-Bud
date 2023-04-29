@@ -5,7 +5,7 @@ const alert = getElement('.alert');
 const form = getElement('.grocery-form');
 const groceryInput = document.getElementById('grocery');
 const submitBtn = getElement('.submit-btn');
-const groceryContainer = document.querySelector('.grocery-container');
+const groceryContainer = getElement('.grocery-container');
 const groceryList = document.querySelector('.grocery-list');
 const clearBtn = document.querySelector('.clear-btn');
 
