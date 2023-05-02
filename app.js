@@ -17,7 +17,7 @@ const editInfo = {
 };
 
 // let editElement;
-let editFlag = false;
+// let editFlag = false;
 let editID = '';
 
 // ********** Event Listeners **********
