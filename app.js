@@ -13,6 +13,7 @@ const clearBtn = getElement('.clear-btn');
 const editInfo = {
     editElement: null,
     editFlag: false,
+    editID: '',
 };
 
 // let editElement;
