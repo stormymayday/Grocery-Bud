@@ -10,7 +10,9 @@ const groceryList = getElement('.grocery-list');
 const clearBtn = getElement('.clear-btn');
 
 // ********** Edit Option Variables **********
-const editInfo = {};
+const editInfo = {
+    editElement: null,
+};
 let editElement;
 let editFlag = false;
 let editID = '';
