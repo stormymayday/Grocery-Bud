@@ -12,6 +12,7 @@ const clearBtn = getElement('.clear-btn');
 // ********** Edit Option Variables **********
 const editInfo = {
     editElement: null,
+    editFlag: false,
 };
 
 // let editElement;
