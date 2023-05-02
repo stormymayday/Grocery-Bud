@@ -18,7 +18,7 @@ const editInfo = {
 
 // let editElement;
 // let editFlag = false;
-let editID = '';
+// let editID = '';
 
 // ********** Event Listeners **********
 // Form Submission
@@ -75,7 +75,7 @@ function addItem(event) {
         displayAlert('value changed', 'success');
 
         // 3. Editing in the Local Storage
-        editLocalStorage(editID, inputValue);
+        editLocalStorage(editInfo.editID, inputValue);
 
         // 4. Setting back to default:
         setBackToDefault();
@@ -184,7 +184,8 @@ export function setBackToDefault() {
     editInfo.editFlag = false;
 
     // Setting editID to empty string
-    editID = '';
+    // editID = '';
+    editInfo.editID = '';
 
     // Setting submit button value to 'submit'
     submitBtn.textContent = 'submit';
@@ -210,7 +211,8 @@ function editItem(event) {
     editInfo.editFlag = true;
 
     // Setting up the editID
-    editID = groceryItem.dataset.id;
+    // editID = groceryItem.dataset.id;
+    editInfo.editID = groceryItem.dataset.id;
 
     // Changing the 'Submit' button (value) to 'Edit'
     submitBtn.textContent = 'edit';
