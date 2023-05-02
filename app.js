@@ -39,7 +39,7 @@ function addItem(event) {
     // Creating a unique ID
     const id = new Date().getTime().toString();
 
-    if (inputValue && !editFlag) {
+    if (inputValue && !editInfo.editFlag) {
 
         // If the input field is not empty
         // AND there is no editing
@@ -60,7 +60,7 @@ function addItem(event) {
         // Setting back to default
         setBackToDefault();
 
-    } else if (inputValue && editFlag) {
+    } else if (inputValue && editInfo.editFlag) {
 
         // If the input field is not empty
         // AND editing
@@ -179,7 +179,8 @@ export function setBackToDefault() {
     groceryInput.value = '';
 
     // Setting editFlag to false
-    editFlag = false;
+    // editFlag = false;
+    editInfo.editFlag = false;
 
     // Setting editID to empty string
     editID = '';
@@ -204,7 +205,8 @@ function editItem(event) {
     groceryInput.value = editInfo.editElement.innerHTML;
 
     // Setting the editFlag to true
-    editFlag = true;
+    // editFlag = true;
+    editInfo.editFlag = true;
 
     // Setting up the editID
     editID = groceryItem.dataset.id;
