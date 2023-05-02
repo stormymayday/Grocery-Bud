@@ -13,7 +13,8 @@ const clearBtn = getElement('.clear-btn');
 const editInfo = {
     editElement: null,
 };
-let editElement;
+
+// let editElement;
 let editFlag = false;
 let editID = '';
 
@@ -65,7 +66,8 @@ function addItem(event) {
         // THEN edit:
 
         // 1. Grabbing the input value and assigning it to the editElement:
-        editElement.innerHTML = inputValue;
+        // editElement.innerHTML = inputValue;
+        editInfo.editElement.innerHTML = inputValue;
 
         // 2. Displaying the alert:
         displayAlert('value changed', 'success');
@@ -193,10 +195,12 @@ function editItem(event) {
     const groceryItem = event.currentTarget.parentElement.parentElement;
 
     // Getting the associated span with class of 'title' that contains the item name
-    editElement = event.currentTarget.parentElement.previousElementSibling;
+    // editElement = event.currentTarget.parentElement.previousElementSibling;
+    editInfo.editElement = event.currentTarget.parentElement.previousElementSibling;
 
     // Placing the groceryItem name into the input field (groceryInput)
-    groceryInput.value = editElement.innerHTML;
+    // groceryInput.value = editElement.innerHTML;
+    groceryInput.value = editInfo.editElement.innerHTML;
 
     // Setting the editFlag to true
     editFlag = true;
