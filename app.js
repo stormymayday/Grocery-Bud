@@ -1,16 +1,22 @@
 import getElement from "./utils/getElement.js";
+import editItem from "./utils/editItem.js";
 
 // ********** Selecting Items **********
 const alert = getElement('.alert');
 const form = getElement('.grocery-form');
-const groceryInput = document.getElementById('grocery');
-const submitBtn = getElement('.submit-btn');
+// const groceryInput = document.getElementById('grocery');
+// const submitBtn = getElement('.submit-btn');
 const groceryContainer = getElement('.grocery-container');
 const groceryList = getElement('.grocery-list');
 const clearBtn = getElement('.clear-btn');
 
+export const selections = {
+    submitBtn: getElement('.submit-btn'),
+    groceryInput: document.getElementById('grocery'),
+};
+
 // ********** Edit Option Variables **********
-const editInfo = {
+export const editInfo = {
     editElement: null,
     editFlag: false,
     editID: '',
@@ -35,7 +41,8 @@ function addItem(event) {
     event.preventDefault();
 
     // Accessing the groceryInput value
-    const inputValue = groceryInput.value;
+    // const inputValue = groceryInput.value;
+    const inputValue = selections.groceryInput.value;
 
     // Creating a unique ID
     const id = new Date().getTime().toString();
@@ -177,7 +184,8 @@ export function displayAlert(text, action) {
 export function setBackToDefault() {
 
     // Clearing input value
-    groceryInput.value = '';
+    // groceryInput.value = '';
+    selections.groceryInput.value = '';
 
     // Setting editFlag to false
     // editFlag = false;
@@ -188,35 +196,13 @@ export function setBackToDefault() {
     editInfo.editID = '';
 
     // Setting submit button value to 'submit'
-    submitBtn.textContent = 'submit';
+    // submitBtn.textContent = 'submit';
+    selections.submitBtn.textContent = 'submit';
 }
 // Set Back to Default - end
 
 // Edit Item - start
-function editItem(event) {
 
-    // Selecting the 'grocery-item'
-    const groceryItem = event.currentTarget.parentElement.parentElement;
-
-    // Getting the associated span with class of 'title' that contains the item name
-    // editElement = event.currentTarget.parentElement.previousElementSibling;
-    editInfo.editElement = event.currentTarget.parentElement.previousElementSibling;
-
-    // Placing the groceryItem name into the input field (groceryInput)
-    // groceryInput.value = editElement.innerHTML;
-    groceryInput.value = editInfo.editElement.innerHTML;
-
-    // Setting the editFlag to true
-    // editFlag = true;
-    editInfo.editFlag = true;
-
-    // Setting up the editID
-    // editID = groceryItem.dataset.id;
-    editInfo.editID = groceryItem.dataset.id;
-
-    // Changing the 'Submit' button (value) to 'Edit'
-    submitBtn.textContent = 'edit';
-}
 // Edit Item - end
 
 // ********** Local Storage **********
