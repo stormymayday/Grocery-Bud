@@ -2,7 +2,7 @@ import getElement from "./utils/getElement.js";
 import editItem from "./utils/editItem.js";
 
 // ********** Selecting Items **********
-const alert = getElement('.alert');
+// const alert = getElement('.alert');
 const form = getElement('.grocery-form');
 // const groceryInput = document.getElementById('grocery');
 // const submitBtn = getElement('.submit-btn');
@@ -11,6 +11,7 @@ const groceryList = getElement('.grocery-list');
 const clearBtn = getElement('.clear-btn');
 
 export const selections = {
+    alert: getElement('.alert'),
     submitBtn: getElement('.submit-btn'),
     groceryInput: getElement('#grocery'),
 };
@@ -161,19 +162,20 @@ function clearItems() {
 export function displayAlert(text, action) {
 
     // Displaying alert text
-    alert.textContent = text;
+    selections.alert.textContent = text;
 
     // Adding the alert class (danger/success)
-    alert.classList.add(`alert-${action}`);
+    // alert.classList.add(`alert-${action}`);
+    selections.alert.classList.add(`alert-${action}`);
 
     // Removing the alert after 1.5 second (1500 ms)
     setTimeout(function () {
 
         // Removing the alert text
-        alert.textContent = '';
+        selections.alert.textContent = '';
 
         // Removing the alert class (danger/success)
-        alert.classList.remove(`alert-${action}`);
+        selections.alert.classList.remove(`alert-${action}`);
 
     }, 1500);
 
