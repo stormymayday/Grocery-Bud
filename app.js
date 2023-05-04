@@ -7,7 +7,7 @@ import editItem from "./utils/editItem.js";
 // const groceryInput = document.getElementById('grocery');
 // const submitBtn = getElement('.submit-btn');
 // const groceryContainer = getElement('.grocery-container');
-const groceryList = getElement('.grocery-list');
+// const groceryList = getElement('.grocery-list');
 const clearBtn = getElement('.clear-btn');
 
 export const selections = {
@@ -16,6 +16,7 @@ export const selections = {
     submitBtn: getElement('.submit-btn'),
     groceryInput: getElement('#grocery'),
     groceryContainer: getElement('.grocery-container'),
+    groceryList: getElement('.grocery-list'),
 };
 
 // ********** Edit Option Variables **********
@@ -109,10 +110,10 @@ function deleteItem(event) {
     const id = groceryItem.dataset.id;
 
     // Removing 'grocery-item' from the groceryList
-    groceryList.removeChild(groceryItem);
+    selections.groceryList.removeChild(groceryItem);
 
     // Check if groceryList is empty
-    if (groceryList.children.length === 0) {
+    if (selections.groceryList.children.length === 0) {
         // Remove the 'show-container' class
         selections.groceryContainer.classList.remove('show-container');
     }
@@ -140,7 +141,7 @@ function clearItems() {
 
         // Iterating over the nodeList and removing items from the groceryList
         items.forEach(function (item) {
-            groceryList.removeChild(item);
+            selections.groceryList.removeChild(item);
         });
 
     }
@@ -370,7 +371,7 @@ export function createListItem(id, value) {
     editBtn.addEventListener('click', editItem);
 
     // Adding article to the list
-    groceryList.appendChild(element);
+    selections.groceryList.appendChild(element);
 
 }
 // createListItem - end
