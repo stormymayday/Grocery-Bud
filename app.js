@@ -2,14 +2,6 @@ import getElement from "./utils/getElement.js";
 import editItem from "./utils/editItem.js";
 
 // ********** Selecting Items **********
-// const alert = getElement('.alert');
-// const form = getElement('.grocery-form');
-// const groceryInput = document.getElementById('grocery');
-// const submitBtn = getElement('.submit-btn');
-// const groceryContainer = getElement('.grocery-container');
-// const groceryList = getElement('.grocery-list');
-// const clearBtn = getElement('.clear-btn');
-
 export const selections = {
     alert: getElement('.alert'),
     form: getElement('.grocery-form'),
