@@ -12,7 +12,7 @@ const clearBtn = getElement('.clear-btn');
 
 export const selections = {
     submitBtn: getElement('.submit-btn'),
-    groceryInput: document.getElementById('grocery'),
+    groceryInput: getElement('#grocery'),
 };
 
 // ********** Edit Option Variables **********
