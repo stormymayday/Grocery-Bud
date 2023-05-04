@@ -8,7 +8,7 @@ import editItem from "./utils/editItem.js";
 // const submitBtn = getElement('.submit-btn');
 // const groceryContainer = getElement('.grocery-container');
 // const groceryList = getElement('.grocery-list');
-const clearBtn = getElement('.clear-btn');
+// const clearBtn = getElement('.clear-btn');
 
 export const selections = {
     alert: getElement('.alert'),
@@ -17,6 +17,7 @@ export const selections = {
     groceryInput: getElement('#grocery'),
     groceryContainer: getElement('.grocery-container'),
     groceryList: getElement('.grocery-list'),
+    clearBtn: getElement('.clear-btn'),
 };
 
 // ********** Edit Option Variables **********
@@ -34,7 +35,7 @@ export const editInfo = {
 // Form Submission
 selections.form.addEventListener('submit', addItem);
 // Clear Items
-clearBtn.addEventListener('click', clearItems);
+selections.clearBtn.addEventListener('click', clearItems);
 // Load Items from Local Storage
 window.addEventListener('DOMContentLoaded', setUpItems);
 
