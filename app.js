@@ -6,7 +6,7 @@ import editItem from "./utils/editItem.js";
 // const form = getElement('.grocery-form');
 // const groceryInput = document.getElementById('grocery');
 // const submitBtn = getElement('.submit-btn');
-const groceryContainer = getElement('.grocery-container');
+// const groceryContainer = getElement('.grocery-container');
 const groceryList = getElement('.grocery-list');
 const clearBtn = getElement('.clear-btn');
 
@@ -15,6 +15,7 @@ export const selections = {
     form: getElement('.grocery-form'),
     submitBtn: getElement('.submit-btn'),
     groceryInput: getElement('#grocery'),
+    groceryContainer: getElement('.grocery-container'),
 };
 
 // ********** Edit Option Variables **********
@@ -62,7 +63,7 @@ function addItem(event) {
         displayAlert('item added to the list', 'success');
 
         // Showing the groceryContainer
-        groceryContainer.classList.add('show-container');
+        selections.groceryContainer.classList.add('show-container');
 
         // Adding to local storage
         addToLocalStorage(id, inputValue);
@@ -113,7 +114,7 @@ function deleteItem(event) {
     // Check if groceryList is empty
     if (groceryList.children.length === 0) {
         // Remove the 'show-container' class
-        groceryContainer.classList.remove('show-container');
+        selections.groceryContainer.classList.remove('show-container');
     }
 
     // Displaying the alert
@@ -145,7 +146,7 @@ function clearItems() {
     }
 
     // Removing 'show-container' class from the groceryContainer
-    groceryContainer.classList.remove('show-container');
+    selections.groceryContainer.classList.remove('show-container');
 
     // Displaying the alert
     displayAlert('list has been cleared', 'success');
@@ -313,7 +314,7 @@ function setUpItems() {
         });
 
         // Adding the 'show-container' class
-        groceryContainer.classList.add('show-container');
+        selections.groceryContainer.classList.add('show-container');
 
     }
 
