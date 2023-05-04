@@ -34,7 +34,6 @@ function addItem(event) {
     event.preventDefault();
 
     // Accessing the groceryInput value
-    // const inputValue = groceryInput.value;
     const inputValue = selections.groceryInput.value;
 
     // Creating a unique ID
@@ -68,7 +67,6 @@ function addItem(event) {
         // THEN edit:
 
         // 1. Grabbing the input value and assigning it to the editElement:
-        // editElement.innerHTML = inputValue;
         editInfo.editElement.innerHTML = inputValue;
 
         // 2. Displaying the alert:
@@ -157,7 +155,6 @@ export function displayAlert(text, action) {
     selections.alert.textContent = text;
 
     // Adding the alert class (danger/success)
-    // alert.classList.add(`alert-${action}`);
     selections.alert.classList.add(`alert-${action}`);
 
     // Removing the alert after 1.5 second (1500 ms)
@@ -178,19 +175,15 @@ export function displayAlert(text, action) {
 export function setBackToDefault() {
 
     // Clearing input value
-    // groceryInput.value = '';
     selections.groceryInput.value = '';
 
     // Setting editFlag to false
-    // editFlag = false;
     editInfo.editFlag = false;
 
     // Setting editID to empty string
-    // editID = '';
     editInfo.editID = '';
 
     // Setting submit button value to 'submit'
-    // submitBtn.textContent = 'submit';
     selections.submitBtn.textContent = 'submit';
 }
 // Set Back to Default - end
