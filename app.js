@@ -19,10 +19,6 @@ export const editInfo = {
     editID: '',
 };
 
-// let editElement;
-// let editFlag = false;
-// let editID = '';
-
 // ********** Event Listeners **********
 // Form Submission
 selections.form.addEventListener('submit', addItem);
