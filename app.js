@@ -3,7 +3,7 @@ import editItem from "./utils/editItem.js";
 
 // ********** Selecting Items **********
 // const alert = getElement('.alert');
-const form = getElement('.grocery-form');
+// const form = getElement('.grocery-form');
 // const groceryInput = document.getElementById('grocery');
 // const submitBtn = getElement('.submit-btn');
 const groceryContainer = getElement('.grocery-container');
@@ -12,6 +12,7 @@ const clearBtn = getElement('.clear-btn');
 
 export const selections = {
     alert: getElement('.alert'),
+    form: getElement('.grocery-form'),
     submitBtn: getElement('.submit-btn'),
     groceryInput: getElement('#grocery'),
 };
@@ -29,7 +30,7 @@ export const editInfo = {
 
 // ********** Event Listeners **********
 // Form Submission
-form.addEventListener('submit', addItem);
+selections.form.addEventListener('submit', addItem);
 // Clear Items
 clearBtn.addEventListener('click', clearItems);
 // Load Items from Local Storage
