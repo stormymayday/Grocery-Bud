@@ -1,6 +1,7 @@
 import getElement from "./utils/getElement.js";
 import editItem from "./utils/editItem.js";
 import addItem from "./utils/addItem.js";
+import deleteItem from "./utils/deleteItem.js";
 
 // ********** Selecting Items **********
 export const selections = {
@@ -34,33 +35,7 @@ window.addEventListener('DOMContentLoaded', setUpItems);
 // addItem - start
 
 // deleteItem - start
-function deleteItem(event) {
 
-    // Selecting the 'grocery-item'
-    const groceryItem = event.currentTarget.parentElement.parentElement;
-
-    // Accesssing the id
-    const id = groceryItem.dataset.id;
-
-    // Removing 'grocery-item' from the groceryList
-    selections.groceryList.removeChild(groceryItem);
-
-    // Check if groceryList is empty
-    if (selections.groceryList.children.length === 0) {
-        // Remove the 'show-container' class
-        selections.groceryContainer.classList.remove('show-container');
-    }
-
-    // Displaying the alert
-    displayAlert('item removed', 'success');
-
-    // Setting back to default
-    setBackToDefault();
-
-    // Removing from Local Storage
-    removeFromLocalStorage(id);
-
-}
 // deleteItem - end
 
 // clearItems - start
