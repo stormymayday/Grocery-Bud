@@ -2,6 +2,7 @@ import { selections, editInfo } from "../app.js";
 import { createListItem } from "../app.js";
 import { displayAlert } from "../app.js";
 import { addToLocalStorage } from "../app.js";
+import { editLocalStorage } from "../app.js";
 import { setBackToDefault } from "../app.js";
 
 function addItem(event) {
