@@ -1,3 +1,5 @@
+import { selections } from "../app.js";
+
 function clearItems() {
 
     // Selecting all the 'grocery-item's
