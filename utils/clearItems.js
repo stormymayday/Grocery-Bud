@@ -1,4 +1,4 @@
-import { selections } from "../app.js";
+import { selections, displayAlert } from "../app.js";
 
 function clearItems() {
 
