@@ -1,4 +1,5 @@
-import { selections, displayAlert } from "../app.js";
+import { selections } from "../app.js";
+import displayAlert from "./displayAlert.js";
 import { setBackToDefault } from "../app.js";
 
 function clearItems() {
