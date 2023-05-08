@@ -31,21 +31,6 @@ selections.clearBtn.addEventListener('click', clearItems);
 window.addEventListener('DOMContentLoaded', setUpItems);
 
 // ********** Functions **********
-// addItem - start
-
-// addItem - start
-
-// deleteItem - start
-
-// deleteItem - end
-
-// clearItems - start
-
-// clearItems - end
-
-// Display Alert - start
-
-// Display Alert - end
 
 // Set Back to Default - start
 export function setBackToDefault() {
@@ -63,10 +48,6 @@ export function setBackToDefault() {
     selections.submitBtn.textContent = 'submit';
 }
 // Set Back to Default - end
-
-// Edit Item - start
-
-// Edit Item - end
 
 // ********** Local Storage **********
 
