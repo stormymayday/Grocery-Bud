@@ -1,3 +1,5 @@
+import { selections } from "../app.js";
+
 function displayAlert(text, action) {
 
     // Displaying alert text
