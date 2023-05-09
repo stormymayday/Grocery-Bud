@@ -1,4 +1,4 @@
-import { selections } from "../app.js";
+import { selections, editInfo } from "../app.js";
 
 export function setBackToDefault() {
 
