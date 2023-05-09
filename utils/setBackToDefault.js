@@ -1,3 +1,5 @@
+import { selections } from "../app.js";
+
 export function setBackToDefault() {
 
     // Clearing input value
