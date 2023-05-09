@@ -3,7 +3,7 @@ import { createListItem } from "../app.js";
 import displayAlert from "./displayAlert.js";
 import { addToLocalStorage } from "../app.js";
 import { editLocalStorage } from "../app.js";
-import { setBackToDefault } from "../app.js";
+import setBackToDefault from "../utils/setBackToDefault.js";
 
 function addItem(event) {
     // Preventing default submit form behaviour
