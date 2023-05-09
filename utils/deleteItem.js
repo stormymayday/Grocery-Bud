@@ -1,6 +1,6 @@
 import { selections } from "../app.js";
 import displayAlert from "./displayAlert.js";
-import { setBackToDefault } from "../app.js";
+import setBackToDefault from "./setBackToDefault.js";
 import { removeFromLocalStorage } from "../app.js";
 
 function deleteItem(event) {
