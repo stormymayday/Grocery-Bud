@@ -101,7 +101,7 @@ export function editLocalStorage(id, value) {
 // Edit in local storage - end
 
 // Get local storage - start
-function getLocalStorage() {
+export function getLocalStorage() {
     // IF 'list' exists THEN get it
     // ELSE return an empty array
     return localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : [];

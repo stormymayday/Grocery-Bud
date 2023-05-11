@@ -1,3 +1,5 @@
+import { getLocalStorage } from '../app.js';
+
 export default function addToLocalStorage(id, value) {
 
     // Setting up the grocery object
