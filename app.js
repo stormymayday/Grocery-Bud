@@ -32,28 +32,6 @@ window.addEventListener('DOMContentLoaded', setUpItems);
 
 // ********** Functions **********
 
-// Set Back to Default - start
-
-// Set Back to Default - end
-
-// ********** Local Storage **********
-
-// localStorage API
-// Key Value pairs
-// Methods:
-// 1. setItem
-// 2. getItem
-// 3. removeItem
-// Need to save values as strings
-// Examples:
-// localStorage.setItem('myKey1', JSON.stringify(['item1', 'item2']));
-// const myArray = JSON.parse(localStorage.getItem('myKey1'));
-// localStorage.removeItem('list');
-
-// Add to local storage - start
-
-// Add to local storage - end
-
 // Remove from local storage - start
 export function removeFromLocalStorage(id) {
 
