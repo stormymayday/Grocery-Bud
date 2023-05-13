@@ -1,3 +1,5 @@
+import { getLocalStorage } from "../../app.js";
+
 export default function editLocalStorage(id, value) {
 
     // Getting items from the Local Storage
