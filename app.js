@@ -32,14 +32,6 @@ window.addEventListener('DOMContentLoaded', setUpItems);
 
 // ********** Functions **********
 
-// Remove from local storage - start
-
-// Remove from local storage - end
-
-// Edit in local storage - start
-
-// Edit in local storage - end
-
 // Get local storage - start
 export function getLocalStorage() {
     // IF 'list' exists THEN get it
