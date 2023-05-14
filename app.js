@@ -33,11 +33,7 @@ window.addEventListener('DOMContentLoaded', setUpItems);
 // ********** Functions **********
 
 // Get local storage - start
-export function getLocalStorage() {
-    // IF 'list' exists THEN get it
-    // ELSE return an empty array
-    return localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : [];
-}
+
 // Get local storage - end
 
 // ****** Set Up Items **********
