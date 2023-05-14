@@ -1,4 +1,4 @@
-import { getLocalStorage } from '../../app.js';
+import getLocalStorage from './getLocalStorage.js';
 
 export default function removeFromLocalStorage(id) {
 
