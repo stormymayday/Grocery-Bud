@@ -31,11 +31,3 @@ selections.form.addEventListener('submit', addItem);
 selections.clearBtn.addEventListener('click', clearItems);
 // Load Items from Local Storage
 window.addEventListener('DOMContentLoaded', setUpItems);
-
-// ********** Functions **********
-
-// ****** Set Up Items **********
-
-// createListItem - start
-
-// createListItem - end
