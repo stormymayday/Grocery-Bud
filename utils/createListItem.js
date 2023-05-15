@@ -1,3 +1,4 @@
+import { selections } from "../app.js";
 import deleteItem from "./deleteItem.js";
 import editItem from "./editItem.js";
 
