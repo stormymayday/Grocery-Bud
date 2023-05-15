@@ -1,5 +1,5 @@
 import { selections, editInfo } from "../app.js";
-import { createListItem } from "../app.js";
+import createListItem from "./createListItem.js";
 import displayAlert from "./displayAlert.js";
 import addToLocalStorage from "./localStorage/addToLocalStorage.js";
 import editLocalStorage from "./localStorage/editLocalStorage.js";
