@@ -1,3 +1,5 @@
+import deleteItem from "./deleteItem.js";
+
 export default function createListItem(id, value) {
 
     // Creating an article
