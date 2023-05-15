@@ -1,3 +1,5 @@
+import getLocalStorage from "./localStorage/getLocalStorage.js";
+
 export default function setUpItems() {
 
     // Getting items from the Local Storage
