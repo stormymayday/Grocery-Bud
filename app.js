@@ -35,9 +35,6 @@ window.addEventListener('DOMContentLoaded', setUpItems);
 // ********** Functions **********
 
 // ****** Set Up Items **********
-// setUpItems - start
-
-// setUpItems - end
 
 // createListItem - start
 export function createListItem(id, value) {
