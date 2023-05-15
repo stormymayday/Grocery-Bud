@@ -33,10 +33,6 @@ window.addEventListener('DOMContentLoaded', setUpItems);
 
 // ********** Functions **********
 
-// Get local storage - start
-
-// Get local storage - end
-
 // ****** Set Up Items **********
 // setUpItems - start
 function setUpItems() {
