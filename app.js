@@ -1,5 +1,4 @@
 import getElement from "./utils/getElement.js";
-import editItem from "./utils/editItem.js";
 import addItem from "./utils/addItem.js";
 import clearItems from "./utils/clearItems.js";
 import setUpItems from "./utils/setUpItems.js";
