@@ -4,7 +4,6 @@ import addItem from "./utils/addItem.js";
 import deleteItem from "./utils/deleteItem.js";
 import clearItems from "./utils/clearItems.js";
 import setUpItems from "./utils/setUpItems.js";
-import getLocalStorage from "./utils/localStorage/getLocalStorage.js";
 
 // ********** Selecting Items **********
 export const selections = {
